@@ -17,13 +17,13 @@ const Sidebar = () => {
                 <img src={assets.plus_icon} alt="" />
                {extended ? <p>New Chat</p>: null } 
             </div>
-            <div className="recent">
+           {extended ?  <div className="recent">
                 <p className="recent-title"> Recent</p>
                 <div className="recent-entry">
                     <img src={assets.message_icon} alt="" />
                    {extended ? <p>What is React..</p>: null } 
                 </div>
-            </div>
+            </div> : null}
 
         </div>
         <div className="bottom">
